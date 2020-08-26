@@ -1,0 +1,7 @@
+sudo: required
+services:
+  - docker
+
+script:
+  - docker build -t connectgeeks/node .
+  - docker images connectgeeks/node
